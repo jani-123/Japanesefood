@@ -9,12 +9,19 @@ const App = ({food}) => {
     return (
       <div>
          <h1>FOOD</h1>
-         {plate}
+      
       </div>
     );
 
 }
 
+const checkout =() =>{
+  return(
+    <div className="container">
+    <h1>Orden Details</h1>
+  </div>
+  )
+}
 const mapToProps = ({food}) => ({food});
 
 export default connect(mapToProps)(App);
