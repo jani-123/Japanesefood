@@ -14,8 +14,8 @@ const App = ({food , cart}) => {
          </div>
       </div>
     );
-
 }
+
 
 const mapToProps = ({food , cart}) => ({food ,cart});
 
