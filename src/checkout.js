@@ -2,17 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 import { connect } from "redux-zero/react";
 import { calculatePrice } from "./actions";
+import './checkout.css';
 
 const CHECHOUT = ({ cart, total }) => {
   const priceTotal = e => {
     let quantity = this.inputPrice.value;
     let price = e.target.id;
-    console.log(this.inputPrice.value);
-    console.log(e.target.id);
     calculatePrice(quantity, price)
   };
-  const img = cart.map(e => e.img);
-  const name = cart.map(e => e.name);
+
   return (
     <div className="container">
       <div id="details-checkout">
@@ -22,24 +20,18 @@ const CHECHOUT = ({ cart, total }) => {
             <tr>
               <th>Item</th>
               <th>Quanty</th>
-
               <th>Price</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
-                <div><img src={img} />
-
-                  <span className="product-name">{name}</span>
+                <div><img src={cart[0].img} className="js-imagen"/>
+                  <span className="product-name">{cart[0].name}</span>
                 </div>
               </td>
-              <td>
-                <input type="number" ref={e => (this.inputPrice = e)} />
-              </td>
-              <td>
-                <p className="table-price">{cart[0].price}</p>
-              </td>
+              <td><input type="number" ref={e => (this.inputPrice = e)} /></td>
+              <td><p className="table-price">{cart[0].price}</p></td>
             </tr>
           </tbody>
         </table>
@@ -53,6 +45,5 @@ const CHECHOUT = ({ cart, total }) => {
     </div>
   )
 }
-        const mapToProps = ({ cart, total }) => ({ cart, total });
-
-  export default connect(mapToProps)(CHECHOUT)
+const mapToProps = ({ cart, total }) => ({ cart, total });
+export default connect(mapToProps)(CHECHOUT)
