@@ -5,15 +5,19 @@ export const Menu = ({food, selectedFood}) => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md-1 col-xs-1 col-sm-1 k-back"></div>
-                <div className="col-sm-3 col-md-3 col-xs-12"><img className="k-imgDetails img-responsive" src={food[0].img}/></div>
+                <div className="col-md-1 col-xs-1 col-sm-1 k-back">
+                    <a className='btn' onClick={() => nextFood(-1) }>back</a>
+                </div>
+                <div className="col-sm-3 col-md-3 col-xs-12"><img className="k-imgDetails img-responsive" src={food[selectedFood].img}/></div>
                 <div className="col-sm-4 col-md-4 col-xs-12">
-                    <Description foodDetail={food[0]}/>
+                    <Description foodDetail={food[selectedFood]}/>
                 </div>
                 <div className="col-sm-3 col-md-3 col-xs-12">
-                    <Nutrition foodDetail={food[0]}/>
+                    <Nutrition foodDetail={food[selectedFood]}/>
                 </div>
-                <div className="col-md-1 col-xs-1 col-sm-1 k-next"></div>
+                <div className="col-md-1 col-xs-1 col-sm-1 k-next">
+                    <a className='btn' onClick={() => nextFood(1) }>next</a>
+                </div>
             </div>
         </div>
     )
