@@ -142,9 +142,15 @@ let FOOD = [
 	}
 ];
 
+let Cart =[{
+  name: "Yaki Udon",
+  price: 11.50
+}]
+
 const initialState = {
     food: FOOD,
-    cart:[],
+    cart: Cart,
+    total: 0,
     selectedFood: -1
 };
 
