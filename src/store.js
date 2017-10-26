@@ -143,7 +143,7 @@ let FOOD = [{
 
 const initialState = {
     food: FOOD,
-    selectedFood: -1
+    selectedFood: 0
 };
 
 const store = createStore(initialState);

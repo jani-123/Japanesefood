@@ -5,11 +5,13 @@ import {Menu} from './menu';
 import { connect } from "redux-zero/react";
 //import { } from "./actions";
 
-const App = ({food}) => {
+const App = ({food, selectedFood}) => {
     const plate = food.map( e => e.name);
     return (
       <div>
-        <Menu food={food} />
+        <Menu 
+        food={food} 
+        selectedFood={selectedFood}/>
          <h1>FOOD</h1>
          {plate}
       </div>
@@ -17,6 +19,6 @@ const App = ({food}) => {
 
 }
 
-const mapToProps = ({food}) => ({food});
+const mapToProps = ({food, selectedFood}) => ({food, selectedFood});
 
 export default connect(mapToProps)(App);

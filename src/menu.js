@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
-import {} from './actionsMariley';
-export const Menu = ({food}) => {
-    console.log(food);
+import {nextFood} from './actionsMariley';
+export const Menu = ({food, selectedFood}) => {
+    console.log("select", selectedFood);
     return (
         <div className="container">
             <div className="row">
-                <div className="col-sm-4">{food[0].img}</div>
-                <div className="col-sm-4">
-                    <Description foodDetail={food[0]}/>
+                <div className="col-sm-1">
+                    <a> anterior </a>
                 </div>
+                <div className="col-sm-3">{food[selectedFood].img}</div>
                 <div className="col-sm-4">
-                    <Nutrition foodDetail={food[0]}/>
+                    <Description foodDetail={food[selectedFood]}/>
+                </div>
+                <div className="col-sm-3">
+                    <Nutrition foodDetail={food[selectedFood]}/>
+                </div>
+                <div className="col-sm-1">
+                    <a className="btn" onClick={nextFood}> >>> </a>
                 </div>
             </div>
         </div>
