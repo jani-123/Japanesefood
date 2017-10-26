@@ -14,7 +14,28 @@ let FOOD = [
       energyKcal: 3.344,
       sugar: 0.344
     }]
-  }
+  },
+  {
+		name: "Gohan",
+		price: 3.00,
+		description: 'Steamed rice.',
+		nutricional: ["2.4622","2.672","2.672","25.1129","6.0021","0.3426"],
+		img: "img/gohan.jpg"
+	},
+	{
+		name: "Tori Katsu",
+		price: 11.00,
+		description: 'Steamed rice.',
+		nutricional: ["2.4622","2.672","2.672","25.1129","6.0021","0.3426"],
+		img: "img/tori-katsu.jpg"
+	},
+	{
+		name: "Yaki Udon",
+		price: 11.50,
+		description: 'Steamed rice.',
+		nutricional: ["2.4622","2.672","2.672","25.1129","6.0021","0.3426"],
+		img: "img/yaki-udon.jpg"
+	},
 ];
 const initialState = {
 	food: FOOD,
