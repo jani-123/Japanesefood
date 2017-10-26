@@ -2,26 +2,21 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from "redux-zero/react";
+import { NavLink} from 'react-router-dom';
 //import { } from "./actions";
 
-const App = ({food}) => {
-    const plate = food.map( e => e.name);
+
+const App = ({food , cart}) => {
     return (
-      <div>
-         <h1>FOOD</h1>
-      
+      <div className="container">
+         <div className="row">
+          <NavLink to="/checkout" className="btn btn-lg btn-danger">CHECHOUT</NavLink>
+         </div>
       </div>
     );
-
 }
 
-const checkout =() =>{
-  return(
-    <div className="container">
-    <h1>Orden Details</h1>
-  </div>
-  )
-}
-const mapToProps = ({food}) => ({food});
+
+const mapToProps = ({food , cart}) => ({food ,cart});
 
 export default connect(mapToProps)(App);
