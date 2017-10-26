@@ -1,28 +1,53 @@
-.App {
+/**************************************************Inicio Haidy*********************************************************/
+body {
+  font: 75% 'Droid Sans', sans-serif;
+  height: 100%;
+  background: #0c0c0c;
+}
+.ha-products {
+  position: relative;
+  width: 200px;
+  margin-bottom: 20px;
+  padding-bottom: 62px;
+  background: #fff;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.ha-price {
+  font-size: 17px;
+  color: #463f3f;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  line-height: 1em;
+}
+.ha-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 37px;
+  width: 200px;
+  padding-bottom: 3px;
+  color: #d60041;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-top: 1px dotted #a6a6a6;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.ha-products strong {
+  display: inline-block;
+  color: #ab7829;
+  font-size: 21px;
+  font-weight: normal;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-
-.App-title {
-  font-size: 1.5em;
+.ha-img{
+  position: relative;
+  right: 8%;
 }
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+/**************************************************Fin Haidy*********************************************************/

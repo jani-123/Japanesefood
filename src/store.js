@@ -92,7 +92,7 @@ let FOOD = [
     price : 6,
     description: "Spicy tuna, spring onion and avocado. - 6 pieces",
     nutritional : [1.0003,1.5621,1.5621,25.0911,5.9969,0.0474],
-    img : "img/spicy-tuna-rolls.jpg"
+    img : "img/spicytuna-rolls.jpg"
 
 },
 {

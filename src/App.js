@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from "redux-zero/react";
+import FirstView from "./FirstView"
 //import { } from "./actions";
 
 const App = ({food}) => {
@@ -9,7 +10,7 @@ const App = ({food}) => {
     return (
       <div>
          <h1>FOOD</h1>
-         {plate}
+         <FirstView food={food}/>
       </div>
     );
 
