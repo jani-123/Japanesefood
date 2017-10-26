@@ -144,6 +144,7 @@ let FOOD = [
 
 const initialState = {
     food: FOOD,
+    cart:[],
     selectedFood: -1
 };
 
