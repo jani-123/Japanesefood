@@ -142,9 +142,11 @@ let FOOD = [
 	}
 ];
 
+
 let Cart =[{
   name: "Yaki Udon",
-  price: 11.50
+  price: 11.50,
+  img: "img/yaki-udon.jpg"
 }]
 
 const initialState = {
