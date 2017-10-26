@@ -15,6 +15,7 @@ border-right:0;
   background: #333;
 }
 .so-cart-product{
+  position:relative;
   display:inline-block;
   width:97px;
   height:115px;
@@ -54,8 +55,8 @@ border-right:0;
 .so-less-padding{
   margin: 10px;
 }
-.so-cart-product:hover{
-  background: rgba(255,255,255,0.1);
+.so-cart-product:hover .so-delete{
+  visibility:visible;
 }
 .so-delete{
   position: absolute;
@@ -63,11 +64,8 @@ border-right:0;
   top:0;
   left:0;
   z-index:3;
-  width:100%;
+  width:97px;
   height:100%;
-  background: rgba(0,0,0,0.1);
-}
-.so-delete:hover{
-  visibility:visible;
+  background: rgba(0,0,0,0.6);
 }
 /************************SOLI-fin****************************/

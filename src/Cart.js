@@ -5,7 +5,7 @@ const CartProduct=({product,index})=>{
         <div className="so-cart-product">
             <img src={getInfoProduct(product.id).img}/>
             <span>{product.quantity}x${(getInfoProduct(product.id).price).toFixed(2)}</span>
-            <div className="so-delete"></div>
+            <div className="so-delete"> X </div>
         </div>
     );
 }
