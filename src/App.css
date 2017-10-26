@@ -32,6 +32,25 @@
 
 /*********************CSS de Kely*******************/
 
+.table>tbody>tr>td, .table>thead>tr>th {
+    padding: 0px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 0px solid #ddd !important; 
+    padding-bottom: 4px;
+}
 
+.table>thead>tr>th {
+  border-bottom: 0px solid #ddd; 
+  text-align: center;
+}
 
+.k-imgDetails{
+  margin:  0 auto;
+}
+
+.k-back, .k-next{
+  background: black;
+  height: 200px;
+}
 /***********Fin Kely*********/
