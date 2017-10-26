@@ -1,9 +1,12 @@
 import store from "./store";
-export const nextFood = () => {
+export const nextFood = (n) => {
 
-    let selectedFood = store.getState().selectedFood + 1
-    if (selectedFood == store.getState().food.length - 1)
-        selectedFood = 0
+    let selectedFood = store.getState().selectedFood + n;
+    if (selectedFood == store.getState().food.length - 1) {
+        selectedFood = 0;
+    } else if (selectedFood == -1) {
+        selectedFood = 19;
+    }
 
     store.setState({
         selectedFood: selectedFood

@@ -6,7 +6,7 @@ export const Menu = ({food, selectedFood}) => {
         <div className="container">
             <div className="row">
                 <div className="col-sm-1">
-                    <a> anterior </a>
+                    <a className="btn" onClick={() => nextFood(-1)}> anterior </a>
                 </div>
                 <div className="col-sm-3">{food[selectedFood].img}</div>
                 <div className="col-sm-4">
@@ -16,7 +16,7 @@ export const Menu = ({food, selectedFood}) => {
                     <Nutrition foodDetail={food[selectedFood]}/>
                 </div>
                 <div className="col-sm-1">
-                    <a className="btn" onClick={nextFood}> >>> </a>
+                    <a className="btn" onClick={() => nextFood(1)}> >>> </a>
                 </div>
             </div>
         </div>
