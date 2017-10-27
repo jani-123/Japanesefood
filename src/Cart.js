@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 import { NavLink} from 'react-router-dom';
-import {getInfoProduct,addPrices,emptyCart} from './actions';
+import {getInfoProduct,addPrices,emptyCart,deleteProduct} from './actions';
 const CartProduct=({product,index})=>{
     return (
         <div className="so-cart-product">
             <img src={getInfoProduct(product.id).img}/>
             <span>{product.quantity}x${(getInfoProduct(product.id).price).toFixed(2)}</span>
-            <div className="so-delete"> X </div>
+            <div className="so-delete"  onClick={()=>deleteProduct(product.id)}><i className="fa fa-times fa-3x" aria-hidden="true"></i></div>
         </div>
     );
 }

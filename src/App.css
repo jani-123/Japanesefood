@@ -47,131 +47,126 @@
 }
 
 .ha-products strong {
-    display: inline-block;
-    color: #ab7829;
-    font-size: 21px;
-    font-weight: normal;
-    padding-top: 25px;
-    padding-bottom: 5px;
-    width: 100%;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  display: inline-block;
+  color: #ab7829;
+  font-size: 21px;
+  font-weight: normal;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-
-.ha-img {
-    position: relative;
-    right: 8%;
+.ha-img{
+  position: relative;
+  right: 8%;
 }
-
-.ha-products:hover .ha-arrow {
-    visibility: visible;
+.ha-products:hover .ha-arrow{
+  visibility:visible;
 }
-
-.ha-arrow {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    width: 118%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+.ha-products:hover .img-arrow{
+  visibility:visible;
 }
-
-
+.ha-arrow{
+  position: absolute;
+  visibility:hidden;
+  top:0;
+  left:0;
+  z-index:3;
+  width: 118%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+.img-arrow{
+  position: absolute;
+  visibility:hidden;
+  top:35%;
+  left:40%;
+  z-index:3;
+  width: 20%;
+  height: 20%;
+}
 /**************************************************Fin Haidy*********************************************************/
 
 
 /************************SOLI-inicio****************************/
-
-.so-cart,
-.so-cart-total {
-    background: #000;
-    padding: 0;
-    color: white;
-    height: 115px;
-    border: 1px solid #888;
-    overflow: hidden;
+.so-cart,.so-cart-total{
+  background: #000;
+  padding: 0;
+  color:white;
+  height: 115px;
+  border:1px solid #888; 
+  overflow:hidden;
 }
-
-.so-cart {
-    border-right: 0;
+.so-cart{
+border-right:0;
 }
-
-.so-cart-total {
-    border-left: 0;
-    background: #333;
+.so-cart-total{
+  border-left:0;
+  background: #333;
 }
-
-.so-cart-product {
-    position: relative;
-    display: inline-block;
-    width: 97px;
-    height: 115px;
-    background: #111;
-    text-align: right;
-    font-size: 12px;
+.so-cart-product{
+  position:relative;
+  display:inline-block;
+  width:97px;
+  height:115px;
+  background:#111;
+  text-align: right;
+  font-size: 12px;
 }
-
-.so-cart-product img {
-    width: 100%;
-    object-fit: fill;
+.so-cart-product img{
+  width:100%;
+  object-fit: fill;
 }
-
-.so-cart-product span {
-    color: white;
+.so-cart-product span{
+  color:white;
 }
-
-.so-btn-checkout {
-    border: 0;
-    font-size: 10px;
-    background: #CA0041;
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#CA0041, rgb(121, 0, 40));
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#CA0041, rgb(117, 0, 39));
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#CA0041, rgb(126, 0, 42));
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#CA0041, rgb(128, 0, 43));
-    padding: 10px 20px;
-    margin-left: 15px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.so-btn-checkout{
+  border:0;
+  font-size:10px;
+  background:#CA0041; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#CA0041, rgb(121, 0, 40)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#CA0041, rgb(117, 0, 39)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#CA0041, rgb(126, 0, 42)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#CA0041, rgb(128, 0, 43));
+  padding: 10px 20px;
+  margin-left:15px;
+  position: absolute;
+  bottom:0;
+  right:0;
 }
-
-.so-btn-empty {
-    font-weight: 600;
-    color: rgb(253, 59, 124);
-    font-size: 10px;
-    position: absolute;
-    margin: 8px 10px;
-    ;
-    bottom: 0;
+.so-btn-empty{
+  font-weight: 600;
+  color: rgb(253, 59, 124);
+  font-size:10px;
+  position: absolute;
+  margin: 8px 10px;;
+  bottom: 0;
 }
-
-.so-less-padding {
-    margin: 10px;
+.so-less-padding{
+  margin: 10px;
 }
-
-.so-cart-product:hover .so-delete {
-    visibility: visible;
+.so-cart-product:hover .so-delete{
+  visibility:visible;
 }
+.so-delete{
+  color:white;
+  padding-top: 35%;
+  display:flex;
+  justify-content: center;
+  position: absolute;
+  visibility:hidden;
+  top:0;
+  left:0;
+  z-index:3;
+  width:97px;
+  height:98px;
+  background: rgba(0,0,0,0.6);
+  cursor: pointer;
+  cursor:hand;
 
-.so-delete {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    width: 97px;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
 }
-
-
 /************************SOLI-fin****************************/
 
 
