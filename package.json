@@ -2,7 +2,7 @@
   "name": "foodchinese-app",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://jani-123.github.io/Japanesefood",
+  "homepage": "http://jani-123.github.io/Japanesefood",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "react": "^16.0.0",
@@ -18,5 +18,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
   }
 }

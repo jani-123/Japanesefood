@@ -14,7 +14,7 @@ const CHECHOUT = ({food,cart}) => {
               <span className="product-name">{food[item.id].name}</span>
             </div>
           </td>
-          <td><input type="number" value={item.quantity} onChange={(e) =>setQuantity(item.id , e.target.value)}/></td>
+          <td><input type="number" min="1" value={item.quantity} onChange={(e) =>setQuantity(item.id , e.target.value)}/></td>
           <td><p className="table-price">${food[item.id].price}</p></td>
         </tr>
       )
