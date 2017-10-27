@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Menu} from './menu';
 import { connect } from "redux-zero/react";
 
-=======
 import { NavLink} from 'react-router-dom';
 
 import FirstView from "./FirstView"
