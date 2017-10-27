@@ -9,8 +9,7 @@ const Product = ({item,index}) => {
             <div  className='col-lg-10 col-md-10 col-xs-10 ha-products'>
                 <div className="ha-img">
                     <img src={item.img}/>
-                <NavLink className="ha-arrow" to="/viewproduct" onClick={()=>changeSelectedFood(index)}></NavLink>
-                <img className="img-arrow" src="img/arrow-right.png"/>
+                <NavLink className="ha-arrow" to="/viewproduct" onClick={()=>changeSelectedFood(index)}><img className="img-arrow" src="img/arrow-right.png"/></NavLink>
                 </div>
                 <NavLink to="/viewproduct" onClick={()=>changeSelectedFood(index)}><strong>{item.name}</strong></NavLink>
                 <span className='ha-price'><span>$</span><span >{(item.price).toFixed(2)}</span></span>
