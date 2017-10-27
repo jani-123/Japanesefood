@@ -188,13 +188,18 @@ body {
     box-sizing: border-box;
 }
 
-.table>tbody>tr>td,
+.k-whiteFont .table>tbody>tr>td,
 .table>thead>tr>th {
     padding: 0px;
     line-height: 1.42857143;
     vertical-align: top;
     border-top: 0px solid #ddd !important;
     padding-bottom: 4px;
+}
+
+.k-whiteFont .table>thead>tr>th {
+    border-bottom: 0px solid #ddd;
+    text-align: center;
 }
 
 body .k-whiteFont {
@@ -206,7 +211,7 @@ body .k-whiteFont {
         padding: 0;
     }
     .k-buttonsBottom {
-        visibility: none;
+        display: none;
     }
 }
 
@@ -225,18 +230,13 @@ body .k-whiteFont {
     }
     .k-nextd,
     .k-backd {
-        background: red !important;
+        background: black !important;
     }
 }
 
 .k-btn {
     padding: 0px !important;
     margin: 78px 18px;
-}
-
-.table>thead>tr>th {
-    border-bottom: 0px solid #ddd;
-    text-align: center;
 }
 
 .k-imgDetails {
@@ -315,10 +315,17 @@ body .k-whiteFont {
 .k-priceButton {
     border-top: dotted;
     padding: 10px;
+    margin-bottom: 35px;
 }
 
 .k-detailDes {
     padding: 9px;
+}
+
+.k-table {
+    width: 93%;
+    max-width: 100%;
+    margin-bottom: 0px;
 }
 
 
