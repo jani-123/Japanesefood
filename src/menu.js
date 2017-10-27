@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+
+import { connect } from "redux-zero/react";
 import {nextFood} from './actionsMariley';
-export const Menu = ({food, selectedFood}) => {
+const Menu = ({food, selectedFood}) => {
     console.log("select", selectedFood);
     return (
         <div className="container k-whiteFont"> 
@@ -76,3 +78,6 @@ const Nutrition = ({foodDetail}) => {
         </div>
     );
 }
+const mapToProps = ({food , selectedFood}) => ({food ,selectedFood});
+
+export default connect(mapToProps)(Menu);

@@ -62,3 +62,11 @@ export const calculatePrice = (quantity,price) =>{
      total: priceTotal
    })
 }
+
+/****************************/
+export const changeSelectedFood=(index)=>{
+    console.log("sad",index)
+    store.setState({
+        selectedFood:index
+    })
+}

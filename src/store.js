@@ -141,8 +141,8 @@ let FOOD = [{
 /**********************************************************************Soli****************************************************/
 const initialState = {
     food: FOOD,
-    cart:[{id:0,quantity:2}],
-    selectedFood: -1,
+    cart:[],
+    selectedFood: 0,
     total:0
 };
 

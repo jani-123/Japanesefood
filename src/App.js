@@ -3,23 +3,21 @@ import logo from './logo.svg';
 import './App.css';
 import {Menu} from './menu';
 import { connect } from "redux-zero/react";
-
 import { NavLink} from 'react-router-dom';
-
 import FirstView from "./FirstView"
 import Cart from "./Cart"
 
 const App = ({food , cart}) => {
     return (
       <div className="container">
-         <div className="row">
-            <NavLink to="/checkout" className="btn btn-lg btn-danger">CHECHOUT</NavLink>
-         </div>
-          <div>
          <h1>FOOD</h1>
-         <Cart cart={cart}/>
+         {
+           cart.length>0?
+           <Cart cart={cart}/>:
+           <div></div>
+         }
+         
          <FirstView food={food}/>
-      </div>
       </div>
     );
 }
