@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import Cart from "./Cart"
-
 import { connect } from "redux-zero/react";
+import {Header} from './header';
+import {addCart} from './actions';
 import {nextFood} from './actionsMariley';
 const Menu = ({food, selectedFood, cart}) => {
     console.log("select", selectedFood);
     return (
         <div>
+            <Header cart={cart}/>
             {
                 cart.length>0?
                 <Cart cart={cart}/>:
@@ -35,7 +37,8 @@ const Menu = ({food, selectedFood, cart}) => {
                         </div>
                     </div>
                     <div className="col-sm-5 col-md-5 col-xs-12">
-                        <Description foodDetail={food[selectedFood]}/>
+                        <Description foodDetail={food[selectedFood]}
+                                selectedFood={selectedFood}/>
                     </div>
                     <div className="col-sm-3 col-md-3 col-xs-12">
                         <Nutrition foodDetail={food[selectedFood]}/>
@@ -51,7 +54,7 @@ const Menu = ({food, selectedFood, cart}) => {
     )
 }
 
-const Description =({foodDetail}) => {
+const Description =({foodDetail, selectedFood}) => {
     return (
         <div>
             <div className="k-detailDes">
@@ -61,7 +64,7 @@ const Description =({foodDetail}) => {
             <br />
             <div className="k-priceButton">
                 <div className="col-xs-6 col-md-6 col-sm-6">${foodDetail.price}</div>
-                <button className="buy col-xs-6 col-md-6 col-sm-6">Add to Cart</button>
+                <button className="buy col-xs-6 col-md-6 col-sm-6" onClick={() => addCart(selectedFood)}>Add to Cart</button>
             </div>
         </div>
     )
