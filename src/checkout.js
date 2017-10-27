@@ -10,6 +10,19 @@ const CHECHOUT = ({ cart, total }) => {
     let price = e.target.id;
     calculatePrice(quantity, price)
   };
+  const foodTable = cart.map((item, index) => {
+      return (
+        <tr key={index}>
+          <td>
+            <div><img src={item.img} className="js-imagen" />
+              <span className="product-name">{item.name}</span>
+            </div>
+          </td>
+          <td><input type="number" ref={e => (this.inputPrice = e)} /></td>
+          <td><p className="table-price">{item.price}</p></td>
+        </tr>
+      )
+  });
 
   return (
     <div className="container su">
@@ -24,15 +37,7 @@ const CHECHOUT = ({ cart, total }) => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <div><img src={cart[0].img} className="js-imagen"/>
-                  <span className="product-name">{cart[0].name}</span>
-                </div>
-              </td>
-              <td><input type="number" ref={e => (this.inputPrice = e)} /></td>
-              <td><p className="table-price">{cart[0].price}</p></td>
-            </tr>
+            {foodTable}
           </tbody>
         </table>
         <div id="total-checkout">
@@ -45,5 +50,6 @@ const CHECHOUT = ({ cart, total }) => {
     </div>
   )
 }
+
 const mapToProps = ({ cart, total }) => ({ cart, total });
 export default connect(mapToProps)(CHECHOUT)
