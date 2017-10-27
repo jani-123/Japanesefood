@@ -60,6 +60,9 @@
 .ha-products:hover .ha-arrow{
   visibility:visible;
 }
+.ha-products:hover .img-arrow{
+  visibility:visible;
+}
 .ha-arrow{
   position: absolute;
   visibility:hidden;
@@ -69,6 +72,15 @@
   width: 118%;
   height: 100%;
   background: rgba(0,0,0,0.6);
+}
+.img-arrow{
+  position: absolute;
+  visibility:hidden;
+  top:35%;
+  left:50%;
+  z-index:3;
+  width: 20%;
+  height: 20%;
 }
 /**************************************************Fin Haidy*********************************************************/
 /************************SOLI-inicio****************************/
