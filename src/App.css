@@ -266,7 +266,7 @@ body .k-whiteFont {
 #details-bottom-image {
     background: url("http://www.apartmentsrambla102.com/blog/wp-content/uploads/2015/07/sushi.jpg") no-repeat bottom left;
     height: 200px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
 .buy {
