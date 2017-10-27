@@ -1,283 +1,325 @@
 /**************************************************Inicio Haidy*********************************************************/
-.ha-ubication{
-  position: relative;
-  margin-top: 4%;
-  left: 7%;
+
+.ha-ubication {
+    position: relative;
+    margin-top: 4%;
+    left: 7%;
 }
+
 .ha-products {
-  position: relative;
-  width: 200px;
-  margin-bottom: 20px;
-  padding-bottom: 62px;
-  background: #fff;
-  text-align: center;
+    position: relative;
+    width: 200px;
+    margin-bottom: 20px;
+    padding-bottom: 62px;
+    background: #fff;
+    text-align: center;
 }
+
 .ha-price {
-  font-size: 17px;
-  color: #463f3f;
-  width: 100%;
-  position: relative;
-  display: inline-block;
-  line-height: 1em;
+    font-size: 17px;
+    color: #463f3f;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    line-height: 1em;
 }
+
 .ha-btn {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 37px;
-  width: 200px;
-  padding-bottom: 3px;
-  color: #d60041;
-  font-size: 12px;
-  text-transform: uppercase;
-  background-color: transparent;
-  border-top: 1px dotted #a6a6a6;
-  border-left: none;
-  border-right: 1px dotted #a6a6a6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 37px;
+    width: 200px;
+    padding-bottom: 3px;
+    color: #d60041;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-top: 1px dotted #a6a6a6;
+    border-left: none;
+    border-right: 1px dotted #a6a6a6;
 }
+
 .ha-btn:hover {
-  background-color: #d60041;
-  color: #fff;
-  cursor: pointer;
+    background-color: #d60041;
+    color: #fff;
+    cursor: pointer;
 }
 
 .ha-products strong {
-  display: inline-block;
-  color: #ab7829;
-  font-size: 21px;
-  font-weight: normal;
-  padding-top: 25px;
-  padding-bottom: 5px;
-  width: 100%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+    display: inline-block;
+    color: #ab7829;
+    font-size: 21px;
+    font-weight: normal;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
-.ha-img{
-  position: relative;
-  right: 8%;
+
+.ha-img {
+    position: relative;
+    right: 8%;
 }
-.ha-products:hover .ha-arrow{
-  visibility:visible;
+
+.ha-products:hover .ha-arrow {
+    visibility: visible;
 }
-.ha-arrow{
-  position: absolute;
-  visibility:hidden;
-  top:0;
-  left:0;
-  z-index:3;
-  width: 118%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
+
+.ha-arrow {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 118%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
+
+
 /**************************************************Fin Haidy*********************************************************/
+
+
 /************************SOLI-inicio****************************/
-.so-cart,.so-cart-total{
-  background: #000;
-  padding: 0;
-  color:white;
-  height: 115px;
-  border:1px solid #888; 
-  overflow:hidden;
+
+.so-cart,
+.so-cart-total {
+    background: #000;
+    padding: 0;
+    color: white;
+    height: 115px;
+    border: 1px solid #888;
+    overflow: hidden;
 }
-.so-cart{
-border-right:0;
+
+.so-cart {
+    border-right: 0;
 }
-.so-cart-total{
-  border-left:0;
-  background: #333;
+
+.so-cart-total {
+    border-left: 0;
+    background: #333;
 }
-.so-cart-product{
-  position:relative;
-  display:inline-block;
-  width:97px;
-  height:115px;
-  background:#111;
-  text-align: right;
-  font-size: 12px;
+
+.so-cart-product {
+    position: relative;
+    display: inline-block;
+    width: 97px;
+    height: 115px;
+    background: #111;
+    text-align: right;
+    font-size: 12px;
 }
-.so-cart-product img{
-  width:100%;
-  object-fit: fill;
+
+.so-cart-product img {
+    width: 100%;
+    object-fit: fill;
 }
-.so-cart-product span{
-  color:white;
+
+.so-cart-product span {
+    color: white;
 }
-.so-btn-checkout{
-  border:0;
-  font-size:10px;
-  background:#CA0041; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#CA0041, rgb(121, 0, 40)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#CA0041, rgb(117, 0, 39)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#CA0041, rgb(126, 0, 42)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#CA0041, rgb(128, 0, 43));
-  padding: 10px 20px;
-  margin-left:15px;
-  position: absolute;
-  bottom:0;
-  right:0;
+
+.so-btn-checkout {
+    border: 0;
+    font-size: 10px;
+    background: #CA0041;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#CA0041, rgb(121, 0, 40));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#CA0041, rgb(117, 0, 39));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#CA0041, rgb(126, 0, 42));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#CA0041, rgb(128, 0, 43));
+    padding: 10px 20px;
+    margin-left: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
-.so-btn-empty{
-  font-weight: 600;
-  color: rgb(253, 59, 124);
-  font-size:10px;
-  position: absolute;
-  margin: 8px 10px;;
-  bottom: 0;
+
+.so-btn-empty {
+    font-weight: 600;
+    color: rgb(253, 59, 124);
+    font-size: 10px;
+    position: absolute;
+    margin: 8px 10px;
+    ;
+    bottom: 0;
 }
-.so-less-padding{
-  margin: 10px;
+
+.so-less-padding {
+    margin: 10px;
 }
-.so-cart-product:hover .so-delete{
-  visibility:visible;
+
+.so-cart-product:hover .so-delete {
+    visibility: visible;
 }
-.so-delete{
-  position: absolute;
-  visibility:hidden;
-  top:0;
-  left:0;
-  z-index:3;
-  width:97px;
-  height:100%;
-  background: rgba(0,0,0,0.6);
+
+.so-delete {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 97px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
+
 
 /************************SOLI-fin****************************/
+
+
 /*********************CSS de Kely*******************/
+
 body {
-  height: 100%;
-  background: #0c0c0c url('http://demos.telerik.com/kendo-ui/content/spa/websushi/css/images/background-image.png') repeat left top;
-}
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    height: 100%;
+    background: #0c0c0c url('http://demos.telerik.com/kendo-ui/content/spa/websushi/css/images/background-image.png') repeat left top;
 }
 
-.table>tbody>tr>td, .table>thead>tr>th {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.table>tbody>tr>td,
+.table>thead>tr>th {
     padding: 0px;
     line-height: 1.42857143;
     vertical-align: top;
-    border-top: 0px solid #ddd !important; 
+    border-top: 0px solid #ddd !important;
     padding-bottom: 4px;
 }
 
-body .k-whiteFont{
-  background: white;
+body .k-whiteFont {
+    background: white;
 }
 
 @media screen and (max-width: 1400px) and (min-width: 768px) {
-  .k-space {
-      padding: 0; 
-  }
-  .k-buttonsBottom{
-    visibility: none;
-  }
+    .k-space {
+        padding: 0;
+    }
+    .k-buttonsBottom {
+        visibility: none;
+    }
 }
 
 @media screen and (max-width: 767px) and (min-width: 0px) {
-  .k-imgDetails{
-    width: 380px;
-  }
-  .k-next, .k-back, #details-top-image, #details-bottom-image{
-    display: none;
-  }
-  .k-buttonsBottom{
-    display: block;
-  }
-  .k-nextd, .k-backd{
-    background: red !important;
-  }
+    .k-imgDetails {
+        width: 380px;
+    }
+    .k-next,
+    .k-back,
+    #details-top-image,
+    #details-bottom-image {
+        display: none;
+    }
+    .k-buttonsBottom {
+        display: block;
+    }
+    .k-nextd,
+    .k-backd {
+        background: red !important;
+    }
 }
 
-
-.k-btn{
-  padding: 0px !important; 
-  margin: 78px 18px;
+.k-btn {
+    padding: 0px !important;
+    margin: 78px 18px;
 }
+
 .table>thead>tr>th {
-  border-bottom: 0px solid #ddd; 
-  text-align: center;
+    border-bottom: 0px solid #ddd;
+    text-align: center;
 }
 
-.k-imgDetails{
-  margin:  0 auto;
+.k-imgDetails {
+    margin: 0 auto;
 }
 
-.k-back, .k-next{
-  background: black;
-  height: 200px;
+.k-back,
+.k-next {
+    background: black;
+    height: 200px;
 }
 
 #details-top-image {
-  background: url("http://www.apartmentsrambla102.com/blog/wp-content/uploads/2015/07/sushi.jpg") no-repeat top left;
-  height: 200px;
+    background: url("http://www.apartmentsrambla102.com/blog/wp-content/uploads/2015/07/sushi.jpg") no-repeat top left;
+    height: 200px;
 }
 
 #details-bottom-image {
-  background: url("http://www.apartmentsrambla102.com/blog/wp-content/uploads/2015/07/sushi.jpg") no-repeat bottom left;
-  height: 200px;
-  margin-bottom: 20px;
+    background: url("http://www.apartmentsrambla102.com/blog/wp-content/uploads/2015/07/sushi.jpg") no-repeat bottom left;
+    height: 200px;
+    margin-bottom: 20px;
 }
 
-
 .buy {
-  float: right;
-  height: 30px;
-  width: 155px;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  text-transform: uppercase;
-  background: rgb(214,0,65);
-  background: -moz-linear-gradient(top,  rgba(214,0,65,1) 0%, rgba(169,0,64,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(214,0,65,1)), color-stop(100%,rgba(169,0,64,1)));
-  background: -webkit-linear-gradient(top,  rgba(214,0,65,1) 0%,rgba(169,0,64,1) 100%);
-  background: -o-linear-gradient(top,  rgba(214,0,65,1) 0%,rgba(169,0,64,1) 100%);
-  background: -ms-linear-gradient(top,  rgba(214,0,65,1) 0%,rgba(169,0,64,1) 100%);
-  background: linear-gradient(to bottom,  rgba(214,0,65,1) 0%,rgba(169,0,64,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d60041', endColorstr='#a90040',GradientType=0 );
+    float: right;
+    height: 30px;
+    width: 155px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgb(214, 0, 65);
+    background: -moz-linear-gradient(top, rgba(214, 0, 65, 1) 0%, rgba(169, 0, 64, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(214, 0, 65, 1)), color-stop(100%, rgba(169, 0, 64, 1)));
+    background: -webkit-linear-gradient(top, rgba(214, 0, 65, 1) 0%, rgba(169, 0, 64, 1) 100%);
+    background: -o-linear-gradient(top, rgba(214, 0, 65, 1) 0%, rgba(169, 0, 64, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(214, 0, 65, 1) 0%, rgba(169, 0, 64, 1) 100%);
+    background: linear-gradient(to bottom, rgba(214, 0, 65, 1) 0%, rgba(169, 0, 64, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d60041', endColorstr='#a90040', GradientType=0);
 }
 
 .buy span {
-  font-size: 11px;
-  font-weight: bold;
-  vertical-align: middle;
+    font-size: 11px;
+    font-weight: bold;
+    vertical-align: middle;
 }
 
-.buy:before{
-  content: "+ ";
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+.buy:before {
+    content: "+ ";
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .buy:hover {
-  color: #fff;
-  background: rgb(214,0,65);
-  background: -moz-linear-gradient(top,  rgba(169,0,64,1) 0%, rgba(214,0,65,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(169,0,64,1)), color-stop(100%,rgba(214,0,65,1)));
-  background: -webkit-linear-gradient(top,  rgba(169,0,64,1) 0%,rgba(214,0,65,1) 100%);
-  background: -o-linear-gradient(top,  rgba(169,0,64,1) 0%,rgba(214,0,65,1) 100%);
-  background: -ms-linear-gradient(top,  rgba(169,0,64,1) 0%,rgba(214,0,65,1) 100%);
-  background: linear-gradient(to bottom,  rgba(169,0,64,1) 0%,rgba(214,0,65,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d60041', endColorstr='#a90040',GradientType=0 );
-  cursor: pointer;
+    color: #fff;
+    background: rgb(214, 0, 65);
+    background: -moz-linear-gradient(top, rgba(169, 0, 64, 1) 0%, rgba(214, 0, 65, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(169, 0, 64, 1)), color-stop(100%, rgba(214, 0, 65, 1)));
+    background: -webkit-linear-gradient(top, rgba(169, 0, 64, 1) 0%, rgba(214, 0, 65, 1) 100%);
+    background: -o-linear-gradient(top, rgba(169, 0, 64, 1) 0%, rgba(214, 0, 65, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(169, 0, 64, 1) 0%, rgba(214, 0, 65, 1) 100%);
+    background: linear-gradient(to bottom, rgba(169, 0, 64, 1) 0%, rgba(214, 0, 65, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d60041', endColorstr='#a90040', GradientType=0);
+    cursor: pointer;
 }
 
-.buy, .buy:hover {
-  transition: all .3s;
-  -moz-transition: all .3s;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
+.buy,
+.buy:hover {
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
 }
 
-.k-priceButton{
-  border-top: dotted;
-  padding: 10px;
+.k-priceButton {
+    border-top: dotted;
+    padding: 10px;
 }
-.k-detailDes{
-  padding: 9px;
+
+.k-detailDes {
+    padding: 9px;
 }
+
 
 /***********Fin Kely*********/

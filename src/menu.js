@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import Cart from "./Cart"
 
 import { connect } from "redux-zero/react";
 import {nextFood} from './actionsMariley';
-const Menu = ({food, selectedFood}) => {
+const Menu = ({food, selectedFood, cart}) => {
     console.log("select", selectedFood);
     return (
-        <div className="container k-whiteFont"> 
+        <div>
+            {
+                cart.length>0?
+                <Cart cart={cart}/>:
+                <div></div>
+            }
+        <div id="ke-menu" className=" k-whiteFont"> 
             <div className="row" id="details-top-image"></div>
             <div className="row">
                 <div>
@@ -34,6 +41,7 @@ const Menu = ({food, selectedFood}) => {
                     <a className='btn' onClick={() => nextFood(1) }><img src="./img/nav-next.png"/></a>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
@@ -92,6 +100,6 @@ const Nutrition = ({foodDetail}) => {
         </div>
     );
 }
-const mapToProps = ({food , selectedFood}) => ({food ,selectedFood});
+const mapToProps = ({food , selectedFood, cart}) => ({food ,selectedFood, cart});
 
 export default connect(mapToProps)(Menu);
