@@ -3,8 +3,7 @@
   background: #fff;
   text-align: right;
   position: relative;
-  width: 1000px;
-  height: 488px;
+
 }
 
 #details-checkout h1
@@ -22,8 +21,10 @@
 }
 
 
-table{
-  width: 100%;
+.su-table{
+  width: 60%;
+  position: relative;
+   left :20%;
   padding-left: 100px;
   padding-right: 100px;
   border-spacing: 0;
@@ -97,9 +98,6 @@ table tbody td:first-child + td + td {
   width: 200px;
 }
 
-table tbody td:first-child + td + td p{
-
-}
 
 .table-price{
   font-size: 21px;
@@ -120,20 +118,14 @@ table tbody td:first-child + td + td p{
 #total-checkout{
   font-size: 36px;
   color: #2e2e2e;
-  padding-right: 100px;
+  
+  width: 604px;
   padding-top: 27px;
   text-align: right;
   line-height: 1em;
   text-transform: uppercase;
 
 }
-
-#total-checkout span{
-  display:inline-block;
-  color: #2e2e2e;
-}
-
-
 .cancel-order {
   height: 48px;
   width: 131px;
@@ -161,15 +153,6 @@ table tbody td:first-child + td + td p{
   -o-transition: all .3s;
 }
 
-.close{
-  position: absolute;
-  content: " ";
-  display: block;
-   top: 32px;
-  right: 32px;
-  width: 38px;
-  height: 38px;
-}
 
 .details-checkout p{
   float: right;
@@ -180,7 +163,7 @@ table tbody td:first-child + td + td p{
   height: 48px;
   width: 131px;
   display: inline-block;
-  margin-right: 100px;
+  margin-right: 144px;
   margin-bottom: 50px;
   margin-top: 55px;
   color: #fff;
@@ -229,10 +212,10 @@ table tbody td:first-child + td + td p{
   height: 130px;
 }
 /*cambios aca tmb*/
-.container .su{
+/*container .su{
   background: #fff;
   text-align: right;
   position: relative;
   width: 1000px;
   height: 488px; 
-}
+}*/
