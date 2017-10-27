@@ -25,9 +25,9 @@ const CHECHOUT = ({ cart, total }) => {
   });
 
   return (
-    <div className="container su">
+    <div className="container">
       <div className="row">
-      <div className="col-sx-12 col-lg-12 col-md-12 col-sm-12">
+     
       <div id="details-checkout">
         <h1>Orden Details</h1>
         <table className="su-table">
@@ -52,7 +52,7 @@ const CHECHOUT = ({ cart, total }) => {
       
       </div>
     </div>
-    </div>
+   
     </div>
   )
 }

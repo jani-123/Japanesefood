@@ -3,8 +3,7 @@
   background: #fff;
   text-align: right;
   position: relative;
-  width: 1000px;
-  height: 488px;
+
 }
 
 #details-checkout h1
@@ -23,7 +22,9 @@
 
 
 .su-table{
-  width: 100%;
+  width: 60%;
+  position: relative;
+   left :20%;
   padding-left: 100px;
   padding-right: 100px;
   border-spacing: 0;
@@ -117,7 +118,8 @@ table tbody td:first-child + td + td {
 #total-checkout{
   font-size: 36px;
   color: #2e2e2e;
-  padding-right: -1px;
+  
+  width: 604px;
   padding-top: 27px;
   text-align: right;
   line-height: 1em;
@@ -161,7 +163,7 @@ table tbody td:first-child + td + td {
   height: 48px;
   width: 131px;
   display: inline-block;
-  margin-right: 3px;
+  margin-right: 144px;
   margin-bottom: 50px;
   margin-top: 55px;
   color: #fff;
