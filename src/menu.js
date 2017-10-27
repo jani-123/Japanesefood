@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
+
+import { connect } from "redux-zero/react";
 import {nextFood} from './actionsMariley';
-export const Menu = ({food, selectedFood}) => {
+const Menu = ({food, selectedFood}) => {
     console.log("select", selectedFood);
     return (
-        <div className="container">
+        <div className="container k-whiteFont"> 
+            <div className="row" id="details-top-image"></div>
             <div className="row">
+                <div>
                 <div className="col-md-1 col-xs-1 col-sm-1 k-back">
-                    <a className='btn' onClick={() => nextFood(-1) }>back</a>
+                    <a className='btn k-btn' onClick={() => nextFood(-1) }><img src="./img/nav-prev.png"/></a>
                 </div>
-                <div className="col-sm-3 col-md-3 col-xs-12"><img className="k-imgDetails img-responsive" src={food[selectedFood].img}/></div>
+                <div className="col-sm-3 col-md-3 col-xs-12"><img className="k-imgDetails" src={food[selectedFood].img}/></div>
                 <div className="col-sm-4 col-md-4 col-xs-12">
                     <Description foodDetail={food[selectedFood]}/>
                 </div>
@@ -16,9 +20,11 @@ export const Menu = ({food, selectedFood}) => {
                     <Nutrition foodDetail={food[selectedFood]}/>
                 </div>
                 <div className="col-md-1 col-xs-1 col-sm-1 k-next">
-                    <a className='btn' onClick={() => nextFood(1) }>next</a>
+                    <a className='btn k-btn' onClick={() => nextFood(1) }><img src="./img/nav-next.png"/></a>
+                </div>
                 </div>
             </div>
+            <div className="row" id="details-bottom-image"></div>
         </div>
     )
 }
@@ -36,7 +42,7 @@ const Description =({foodDetail}) => {
 const Nutrition = ({foodDetail}) => {
     return (
         <div className="row">
-            <table class="table table-responsive">
+            <table class="table table-responsive k-table">
                 <thead>
                     <tr>
                     <th colspan="2">Nutritional Information</th>
@@ -72,3 +78,6 @@ const Nutrition = ({foodDetail}) => {
         </div>
     );
 }
+const mapToProps = ({food , selectedFood}) => ({food ,selectedFood});
+
+export default connect(mapToProps)(Menu);

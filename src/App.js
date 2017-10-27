@@ -4,23 +4,25 @@ import './App.css';
 import {Menu} from './menu';
 import {Header} from './header';
 import { connect } from "redux-zero/react";
-//import { } from "./actions";
+import { NavLink} from 'react-router-dom';
+import FirstView from "./FirstView"
+import Cart from "./Cart"
 
-const App = ({food, selectedFood}) => {
-    const plate = food.map( e => e.name);
+const App = ({food , cart}) => {
     return (
-      <div>
-        <Header />
-        <Menu 
-        food={food} 
-        selectedFood={selectedFood}/>
+      <div className="container">
          <h1>FOOD</h1>
-         {plate}
+         {
+           cart.length>0?
+           <Cart cart={cart}/>:
+           <div></div>
+         }
+         
+         <FirstView food={food}/>
       </div>
     );
-
 }
 
-const mapToProps = ({food, selectedFood}) => ({food, selectedFood});
+const mapToProps = ({food , cart}) => ({food ,cart});
 
 export default connect(mapToProps)(App);

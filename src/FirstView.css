@@ -1,0 +1,21 @@
+body {
+    font: 75% 'Droid Sans', sans-serif;
+    height: 100%;
+    background: #0c0c0c url(images/background-image.png) repeat left top;
+}
+.ha-products {
+    position: relative;
+    width: 200px;
+    margin-bottom: 20px;
+    padding-bottom: 62px;
+    background: #fff url(images/item-separator.png) repeat-y right top;
+    text-align: center;
+}
+.ha-price {
+    font-size: 17px;
+    color: #9e9e9e;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    line-height: 1em;
+}

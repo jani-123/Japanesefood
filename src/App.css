@@ -1,36 +1,158 @@
-.App {
+/**************************************************Inicio Haidy*********************************************************/
+.ha-ubication{
+  position: relative;
+  margin-top: 4%;
+  left: 7%;
+}
+.ha-products {
+  position: relative;
+  width: 200px;
+  margin-bottom: 20px;
+  padding-bottom: 62px;
+  background: #fff;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.ha-price {
+  font-size: 17px;
+  color: #463f3f;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  line-height: 1em;
+}
+.ha-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 37px;
+  width: 200px;
+  padding-bottom: 3px;
+  color: #d60041;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-top: 1px dotted #a6a6a6;
+  border-left: none;
+  border-right: 1px dotted #a6a6a6;
+}
+.ha-btn:hover {
+  background-color: #d60041;
+  color: #fff;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.ha-products strong {
+  display: inline-block;
+  color: #ab7829;
+  font-size: 21px;
+  font-weight: normal;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.ha-img{
+  position: relative;
+  right: 8%;
+}
+.ha-products:hover .ha-arrow{
+  visibility:visible;
+}
+.ha-arrow{
+  position: absolute;
+  visibility:hidden;
+  top:0;
+  left:0;
+  z-index:3;
+  width: 118%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+/**************************************************Fin Haidy*********************************************************/
+/************************SOLI-inicio****************************/
+.so-cart,.so-cart-total{
+  background: #000;
+  padding: 0;
+  color:white;
+  height: 115px;
+  border:1px solid #888; 
+  overflow:hidden;
+}
+.so-cart{
+border-right:0;
+}
+.so-cart-total{
+  border-left:0;
+  background: #333;
+}
+.so-cart-product{
+  position:relative;
+  display:inline-block;
+  width:97px;
+  height:115px;
+  background:#111;
+  text-align: right;
+  font-size: 12px;
+}
+.so-cart-product img{
+  width:100%;
+  object-fit: fill;
+}
+.so-cart-product span{
+  color:white;
+}
+.so-btn-checkout{
+  border:0;
+  font-size:10px;
+  background:#CA0041; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#CA0041, rgb(121, 0, 40)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#CA0041, rgb(117, 0, 39)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#CA0041, rgb(126, 0, 42)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#CA0041, rgb(128, 0, 43));
+  padding: 10px 20px;
+  margin-left:15px;
+  position: absolute;
+  bottom:0;
+  right:0;
+}
+.so-btn-empty{
+  font-weight: 600;
+  color: rgb(253, 59, 124);
+  font-size:10px;
+  position: absolute;
+  margin: 8px 10px;;
+  bottom: 0;
+}
+.so-less-padding{
+  margin: 10px;
+}
+.so-cart-product:hover .so-delete{
+  visibility:visible;
+}
+.so-delete{
+  position: absolute;
+  visibility:hidden;
+  top:0;
+  left:0;
+  z-index:3;
+  width:97px;
+  height:100%;
+  background: rgba(0,0,0,0.6);
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-
-
-
+/************************SOLI-fin****************************/
 /*********************CSS de Kely*******************/
+body {
+  height: 100%;
+  background: #0c0c0c url('http://demos.telerik.com/kendo-ui/content/spa/websushi/css/images/background-image.png') repeat left top;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 .table>tbody>tr>td, .table>thead>tr>th {
     padding: 0px;
@@ -40,6 +162,14 @@
     padding-bottom: 4px;
 }
 
+body .k-whiteFont{
+  background: white;
+}
+
+.k-btn{
+  padding: 0px !important; 
+  margin: 78px 18px;
+}
 .table>thead>tr>th {
   border-bottom: 0px solid #ddd; 
   text-align: center;
@@ -53,4 +183,16 @@
   background: black;
   height: 200px;
 }
+
+#details-top-image {
+  background: url("http://www.apartmentsrambla102.com/blog/wp-content/uploads/2015/07/sushi.jpg") no-repeat top left;
+  height: 200px;
+}
+
+#details-bottom-image {
+  background: url("http://www.apartmentsrambla102.com/blog/wp-content/uploads/2015/07/sushi.jpg") no-repeat bottom left;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
 /***********Fin Kely*********/
