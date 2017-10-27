@@ -14,7 +14,7 @@ const CartProduct=({product,index})=>{
 const Cart=({cart})=>{
     return (
         <div className="container">
-            <div className="row">
+            <div className="row so-margin">
                 <div className="col-md-offset-1 col-md-8 col-sm-offset-1 col-sm-8 col-xs-offset-1 col-xs-8 so-cart">
                     {
                         cart.map((item,index)=>{
