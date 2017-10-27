@@ -7,7 +7,7 @@ const Product = ({item,index}) => {
             <div  className='col-lg-10 col-md-10 col-xs-10 ha-products'>
                 <div className="ha-img">
                     <img src={item.img}/>
-                    <div className="ha-arrow"></div>
+                    <div className="ha-arrow"><img src="arrow-right.png"/></div>
                 </div>
                 <strong>{item.name}</strong>
                 <span className='ha-price'><span>$</span><span >{item.price}</span></span>
