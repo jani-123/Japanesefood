@@ -21,10 +21,10 @@ export const Footer = () => {
                     <p>CoolCode<sup>®</sup></p>
                    <p> [ Kely Añamuro ]
                     [ Janet Quispe ]
-                    [ Haydi Dueñas ]
+                    [ Haidy Dueñas ]
                     [ Susy Talavera ]
                     [ Solimar Huayhua ]
-                    [ Mariley Erika ]</p>
+                    [ Mariley Condori ]</p>
                     <p>Copyright © 2017</p>
         </div>
     )
