@@ -1,4 +1,5 @@
 import store from "./store";
+
 /**************************************************Inicio Haidy*********************************************************/
 export const addCart = (index) =>{
  let newCart = [...store.getState().cart]
@@ -52,3 +53,12 @@ export const emptyCart=()=>{
 
 /************************SOLI-fin****************************/
 
+/* parte janeth-susy */
+
+export const calculatePrice = (quantity,price) =>{
+   let total = store.getState().total;
+   let priceTotal = (quantity * price) ;
+   store.setState({
+     total: priceTotal
+   })
+}
