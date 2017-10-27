@@ -1,45 +1,28 @@
-.ma-btn-trapecio-red {
-    width: 110px;
-    height: 0px;
-    /* border-right: 51px solid transparent; */
-    border-left: 23px solid transparent;
-    border-bottom: 27px solid #428bca;
-}
+/*mar-header section*/
 
-.ma-btn-trapecio-black {
-    width: 250px;
-    height: 0px;
-    border-right: 60px solid transparent;
-    border-left: 60px solid transparent;
-    border-top: 100px solid #428bca;
-}
-
-
-/*header section*/
-
-h1.logo {
+#mar-header h1.logo {
     display: inline-block;
     width: 140px;
     height: 32px;
-    /* background: url('img/logo.png') 0 0 no-repeat; */
+    background: url('http://demos.telerik.com/kendo-ui/content/spa/websushi/css/images/logo.png') 0 0 no-repeat;
 }
 
-h1 a {
+#mar-header h1 a {
     display: inline-block;
     width: 100%;
     height: 100%;
 }
 
-#header {
+#mar-header {
     padding-bottom: 40px;
     border-bottom: 1px solid #535353;
 }
 
-#logo-pic {
+#mar-header #logo-pic {
     float: left;
 }
 
-#cart-info {
+#mar-header #cart-info {
     float: right;
     height: 28px;
     line-height: 28px;
@@ -52,7 +35,7 @@ h1 a {
     letter-spacing: 1px;
 }
 
-#cart-info>span {
+#mar-header #cart-info>span {
     display: inline-block;
     background: rgb(214, 0, 65);
     background: -moz-linear-gradient(top, rgba(214, 0, 65, 1) 0%, rgba(169, 0, 64, 1) 100%);
@@ -66,7 +49,7 @@ h1 a {
     padding: 0 26px 0 28px;
 }
 
-#cart-info>span:hover {
+#mar-header #cart-info>span:hover {
     background: rgb(214, 0, 65);
     background: -moz-linear-gradient(top, rgba(169, 0, 64, 1) 0%, rgba(214, 0, 65, 1) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(169, 0, 64, 1)), color-stop(100%, rgba(214, 0, 65, 1)));
@@ -77,16 +60,16 @@ h1 a {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d60041', endColorstr='#a90040', GradientType=0);
 }
 
-#cart-info span {
+#mar-header #cart-info span {
     color: #fff;
 }
 
-#cart-info span span {
+#mar-header #cart-info span span {
     line-height: 26px;
     font-size: 14px;
 }
 
-#cart-info span:before {
+#mar-header #cart-info span:before {
     content: "";
     display: block;
     width: 0;
@@ -100,7 +83,7 @@ h1 a {
     border-left: 14px solid #000;
 }
 
-#cart-info span:after {
+#mar-header #cart-info span:after {
     content: "";
     display: block;
     width: 8px;

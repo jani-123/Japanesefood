@@ -11,7 +11,7 @@ import Cart from "./Cart"
 const App = ({food , cart}) => {
     return (
       <div className="container">
-         <h1>FOOD</h1>
+         <Header />
          {
            cart.length>0?
            <Cart cart={cart}/>:
