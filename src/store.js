@@ -142,8 +142,28 @@ let FOOD = [
 	}
 ];
 
+
+let Cart =[{
+  name: "Yaki Udon",
+  price: 11.50,
+  img: "img/yaki-udon.jpg"
+},
+{ 
+    name: "Shiromi",
+    price: 9.50,
+    img: "img/shiromi.jpg"
+  },
+  {
+    name: "Tekka maki",
+    price: 6,
+    img:"img/tekka-maki.jpg"
+
+  }]
+
 const initialState = {
     food: FOOD,
+    cart: Cart,
+    total: 0,
     selectedFood: 0
 };
 
