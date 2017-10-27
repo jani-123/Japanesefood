@@ -74,13 +74,6 @@ export const deleteProduct=(index)=>{
 
 /* parte janeth-susy */
 
-export const calculatePrice = (quantity,price) =>{
-   let total = store.getState().total;
-   let priceTotal = (quantity * price) ;
-   store.setState({
-     total: priceTotal
-   })
-}
 
 export const sumPrice = () =>{
     let c = 0;
@@ -97,3 +90,16 @@ export const changeSelectedFood=(index)=>{
         selectedFood:index
     })
 }
+
+export const setQuantity = (id,value) =>{
+    let newCart = [...store.getState().cart]
+    for (var i of newCart){
+        if (i.id == id){
+            i.quantity = value;
+            store.setState({
+                cart : newCart
+            })
+            break;
+        }
+    }
+} 

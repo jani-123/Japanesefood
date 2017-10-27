@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import { connect } from "redux-zero/react";
-import { calculatePrice ,sumPrice} from "./actions";
+import { calculatePrice ,sumPrice, setQuantity} from "./actions";
 import './checkout.css';
 
-const CHECHOUT = ({food,cart}) => {
-  console.log("che",cart);
-  const priceTotal = e => {
-    let quantity = this.inputPrice.value;
-    let price = e.target.id;
-    calculatePrice(quantity, price)
-  };
+const CHECHOUT = ({food,cart}) => { 
+  
   const foodTable = cart.map((item, index) => {
       return (
         <tr key={index}>
@@ -19,8 +14,8 @@ const CHECHOUT = ({food,cart}) => {
               <span className="product-name">{food[item.id].name}</span>
             </div>
           </td>
-          <td><input type="number" ref={e => (this.inputPrice = e)} /></td>
-          <td><p className="table-price">{food[item.id].price}</p></td>
+          <td><input type="number" value={item.quantity} onChange={(e) =>setQuantity(item.id , e.target.value)}/></td>
+          <td><p className="table-price">${food[item.id].price}</p></td>
         </tr>
       )
   });
@@ -44,7 +39,7 @@ const CHECHOUT = ({food,cart}) => {
           </tbody>
         </table>
           <p id="total-checkout" className="text-rigth">
-          <button className="btn btn-link" onClick={priceTotal}>Total:</button>
+          <button className="btn btn-link" >Total:</button>
           <span className="">${sumPrice().toFixed(2)}</span></p>
         <a className="cancel-order" href="#">cancel order</a>
         <button className="order-now" href="#">order now!</button>
