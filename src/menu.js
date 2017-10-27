@@ -22,7 +22,7 @@ const Menu = ({food, selectedFood, cart}) => {
                     <div className="col-sm-2 col-md-2 col-xs-12 k-space">
                         <div className="k-buttonsBottom col-md-1 col-xs-1 col-sm-1">
                             <div className=" k-backd">
-                                <a className='btn' onClick={() => nextFood(-1) }><img src="./img/nav-prev.png"/></a>
+                                <a className='btn k-btns' onClick={() => nextFood(-1) }><img src="./img/nav-prev.png"/></a>
                             </div>
                         </div>
                         <div className="col-xs-8 k-cd">
@@ -30,7 +30,7 @@ const Menu = ({food, selectedFood, cart}) => {
                         </div>
                         <div className="k-buttonsBottom col-md-1 col-xs-1 col-sm-1">
                             <div className=" k-nextd">
-                                <a className='btn' onClick={() => nextFood(1) }><img src="./img/nav-next.png"/></a>
+                                <a className='btn k-btns' onClick={() => nextFood(1) }><img src="./img/nav-next.png"/></a>
                             </div>
                         </div>
                     </div>
