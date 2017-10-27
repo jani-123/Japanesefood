@@ -72,3 +72,16 @@ export const changeSelectedFood=(index)=>{
         selectedFood:index
     })
 }
+
+export const setQuantity = (id,value) =>{
+    let newCart = [...store.getState().cart]
+    for (var i of newCart){
+        if (i.id == id){
+            i.quantity = value;
+            store.setState({
+                cart : newCart
+            })
+            break;
+        }
+    }
+} 
