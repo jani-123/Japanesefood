@@ -26,10 +26,12 @@ const CHECHOUT = ({food,cart}) => {
   });
 
   return (
-    <div className="container su">
+    <div className="container">
+      <div className="row">
+     
       <div id="details-checkout">
         <h1>Orden Details</h1>
-        <table>
+        <table className="su-table">
           <thead>
             <tr>
               <th>Item</th>
@@ -41,13 +43,15 @@ const CHECHOUT = ({food,cart}) => {
             {foodTable}
           </tbody>
         </table>
-        <div id="total-checkout">
-          <button className="btn btn-link" onClick={priceTotal} >Total:</button>
-          <h3>${sumPrice().toFixed(2)}</h3>
-        </div>
+          <p id="total-checkout" className="text-rigth">
+          <button className="btn btn-link" onClick={priceTotal}>Total:</button>
+          <span className="">${sumPrice().toFixed(2)}</span></p>
         <a className="cancel-order" href="#">cancel order</a>
         <button className="order-now" href="#">order now!</button>
+      
       </div>
+    </div>
+   
     </div>
   )
 }
