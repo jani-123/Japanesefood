@@ -23,7 +23,6 @@ export const addCart = (index) =>{
         store.setState({
              cart : newCart
         })
-    console.log(store.getState().cart);
 }
 
 
@@ -45,12 +44,32 @@ export const addPrices=()=>{
     return sum;
 }
 export const emptyCart=()=>{
-    console.log("aaaaaaaa")
     store.setState({
         cart:[],
     })
 }
-
+export const deleteProduct=(index)=>{
+    
+    let list=[...store.getState().cart];
+    for(let i in list){
+        if(list[i].id === index){
+            if(list[i].quantity>1){
+                list[i].quantity-=1;
+                store.setState({
+                    cart:list
+                })
+            }
+            else{
+                list.splice(i,1);
+                store.setState({
+                    cart:list
+                })
+            }
+            return;
+        }
+    }
+       
+}
 /************************SOLI-fin****************************/
 
 /* parte janeth-susy */
@@ -67,8 +86,20 @@ export const sumPrice = () =>{
 
 /****************************/
 export const changeSelectedFood=(index)=>{
-    console.log("sad",index)
     store.setState({
         selectedFood:index
     })
 }
+
+export const setQuantity = (id,value) =>{
+    let newCart = [...store.getState().cart]
+    for (var i of newCart){
+        if (i.id == id){
+            i.quantity = value;
+            store.setState({
+                cart : newCart
+            })
+            break;
+        }
+    }
+} 
