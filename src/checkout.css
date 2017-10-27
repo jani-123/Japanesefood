@@ -3,6 +3,8 @@
   background: #fff;
   text-align: right;
   position: relative;
+  width: 1000px;
+  height: 488px;
 }
 
 #details-checkout h1
@@ -85,6 +87,8 @@ table tbody td span.product-name {
   max-width: 250px;
   height: 100px;
   line-height: 100px;
+ margin-left: 30px; /*cambios aca*/
+
 }
 
 table tbody td:first-child + td + td {
@@ -223,4 +227,12 @@ table tbody td:first-child + td + td p{
 .js-imagen{
   width: 250px;
   height: 130px;
+}
+/*cambios aca tmb*/
+.container .su{
+  background: #fff;
+  text-align: right;
+  position: relative;
+  width: 1000px;
+  height: 488px; 
 }
