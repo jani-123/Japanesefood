@@ -141,10 +141,11 @@ let FOOD = [
 		img: "img/yaki-udon.jpg"
 	}
 ];
-
+/**********************************************************************Soli****************************************************/
 const initialState = {
     food: FOOD,
-    selectedFood: -1
+    cart:[{id:0,quantity:2}],
+    selectedFood: -1,
 };
 
 const store = createStore(initialState);
