@@ -41,49 +41,49 @@ thead th{
   border-bottom: 1px solid #dadada;
 }
 
-table tbody tr td{
+.su-table tbody tr td{
   border-bottom: 1px solid #dadada;
   padding: 0;
 }
 
-table tbody tr{
+.su-table tbody tr{
   padding: 0;
 }
 
-table thead th:first-child{
+.su-table thead th:first-child{
   text-align: left;
   color: #4a4a4a;
   font-size: 13px;
 }
 
-table tbody td:first-child + th {
+.su-table tbody td:first-child + th {
   text-align: center;
 }
 
-table thead th:first-child + th + th {
+.su-table thead th:first-child + th + th {
   font-size: 13px;
   text-align: right;
 }
 
-table tbody input{
+.su-table tbody input{
   width: 70px;
   border: 1px solid #dadada;
   font-size: 17px;
   color: #2e2e2e;
 }
 
-table tbody td:first-child {
+.su-table tbody td:first-child {
   font-size: 21px;
   color: #2e2e2e;
   width: 530px;
 }
 
-table tbody td:first-child + td {
+.su-table tbody td:first-child + td {
   text-align: left;
   width: 70px;
 }
 
-table tbody td span.product-name {
+.su-table tbody td span.product-name {
   display: inline-block;
   max-width: 250px;
   height: 100px;
@@ -92,7 +92,7 @@ table tbody td span.product-name {
 
 }
 
-table tbody td:first-child + td + td {
+.su-table tbody td:first-child + td + td {
   font-size: 21px;
   text-align: right;
   width: 200px;
