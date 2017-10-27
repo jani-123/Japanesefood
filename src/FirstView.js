@@ -12,6 +12,7 @@ const Product = ({item,index}) => {
                 <NavLink className="ha-arrow" to="/viewproduct" onClick={()=>changeSelectedFood(index)}><img className="img-arrow" src="img/arrow-right.png"/></NavLink>
                 </div>
                 <NavLink to="/viewproduct" onClick={()=>changeSelectedFood(index)}><strong>{item.name}</strong></NavLink>
+
                 <span className='ha-price'><span>$</span><span >{(item.price).toFixed(2)}</span></span>
                 <button className='ha-btn'onClick={ () => addCart(index)}>+ Add to cart</button>
                 

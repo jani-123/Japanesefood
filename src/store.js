@@ -143,7 +143,6 @@ const initialState = {
     food: FOOD,
     cart:[],
     selectedFood: 0,
-    total:0
 };
 
 const store = createStore(initialState);
