@@ -167,6 +167,10 @@ border-right:0;
   cursor:hand;
 
 }
+.so-margin{
+  margin-top:20px;
+  margin-bottom:20px;
+}
 /************************SOLI-fin****************************/
 
 
@@ -239,6 +243,11 @@ body .k-whiteFont {
     margin: 78px 18px;
 }
 
+.k-btns {
+  padding: 0px !important;
+  margin: 123px 18px;
+}
+
 .k-imgDetails {
     margin: 0 auto;
 }
@@ -250,7 +259,7 @@ body .k-whiteFont {
 }
 
 .k-back:hover, .k-next:hover{
-  background: red;
+  background: #ba0040;
 } 
 
 #details-top-image {
@@ -314,6 +323,8 @@ body .k-whiteFont {
     -moz-transition: all .3s;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
+    border: 0;
+    border-radius: 9px;
 }
 
 .k-priceButton {
