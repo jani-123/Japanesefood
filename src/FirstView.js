@@ -13,7 +13,7 @@ const Product = ({item,index}) => {
                 </div>
                 <NavLink to="/viewproduct" onClick={()=>changeSelectedFood(index)}><strong>{item.name}</strong></NavLink>
                 <span className='ha-price'><span>$</span><span >{item.price}</span></span>
-                <button className='ha-btn'onClick={ () => addCart(index)}>+ Add to cart</button>
+                <button className='ha-btn' onClick={ () => addCart(index)}>+ Add to cart</button>
                 
             </div>
 
