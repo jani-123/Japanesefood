@@ -217,7 +217,7 @@ body .k-whiteFont {
 
 @media screen and (max-width: 767px) and (min-width: 0px) {
     .k-imgDetails {
-        width: 380px;
+        width: 300px;
     }
     .k-next,
     .k-back,
@@ -230,10 +230,15 @@ body .k-whiteFont {
     }
     .k-nextd,
     .k-backd {
-        background: black !important;
+        background: #ba0040 !important;
+        position: absolute;
+        z-index: 1000;
+        height: 300px
     }
 }
-
+.k-cd{
+  padding: 0;
+}
 .k-btn {
     padding: 0px !important;
     margin: 78px 18px;
@@ -248,6 +253,10 @@ body .k-whiteFont {
     background: black;
     height: 200px;
 }
+
+.k-back:hover, .k-next:hover{
+  background: red;
+} 
 
 #details-top-image {
     background: url("http://www.apartmentsrambla102.com/blog/wp-content/uploads/2015/07/sushi.jpg") no-repeat top left;

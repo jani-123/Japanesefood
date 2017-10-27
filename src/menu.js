@@ -20,16 +20,16 @@ const Menu = ({food, selectedFood, cart}) => {
                         <a className='btn k-btn' onClick={() => nextFood(-1) }><img src="./img/nav-prev.png"/></a>
                     </div>
                     <div className="col-sm-2 col-md-2 col-xs-12 k-space">
-                        <div className="k-buttonsBottom">
-                            <div className="col-md-1 col-xs-2 col-sm-1 k-backd">
+                        <div className="k-buttonsBottom col-md-1 col-xs-1 col-sm-1">
+                            <div className=" k-backd">
                                 <a className='btn' onClick={() => nextFood(-1) }><img src="./img/nav-prev.png"/></a>
                             </div>
                         </div>
-
-                        <img className="k-imgDetails" src={food[selectedFood].img}/>
-                        
-                        <div className="k-buttonsBottom">
-                            <div className="col-md-1 col-xs-2 col-sm-1 k-nextd">
+                        <div className="col-xs-8 k-cd">
+                            <img className="k-imgDetails" src={food[selectedFood].img}/>
+                        </div>
+                        <div className="k-buttonsBottom col-md-1 col-xs-1 col-sm-1">
+                            <div className=" k-nextd">
                                 <a className='btn' onClick={() => nextFood(1) }><img src="./img/nav-next.png"/></a>
                             </div>
                         </div>
