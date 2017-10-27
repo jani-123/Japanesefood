@@ -13,9 +13,11 @@ const CHECHOUT = ({ cart, total }) => {
 
   return (
     <div className="container su">
+      <div className="row">
+      <div className="col-sx-12 col-lg-12 col-md-12 col-sm-12">
       <div id="details-checkout">
         <h1>Orden Details</h1>
-        <table>
+        <table className="su-table">
           <thead>
             <tr>
               <th>Item</th>
@@ -35,13 +37,17 @@ const CHECHOUT = ({ cart, total }) => {
             </tr>
           </tbody>
         </table>
-        <div id="total-checkout">
+        
+          <p id="total-checkout" className="text-rigth">
           <button className="btn btn-link" onClick={priceTotal} id={cart[0].price}>Total:</button>
-          <h3>{total}</h3>
-        </div>
+          <span className="">{total}</span></p>
+        
         <a className="cancel-order" href="#">cancel order</a>
         <button className="order-now" href="#">order now!</button>
+      
       </div>
+    </div>
+    </div>
     </div>
   )
 }
