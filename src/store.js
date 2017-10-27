@@ -92,7 +92,7 @@ let FOOD = [
     price : 6,
     description: "Spicy tuna, spring onion and avocado. - 6 pieces",
     nutritional : [1.0003,1.5621,1.5621,25.0911,5.9969,0.0474],
-    img : "img/spicy-tuna-rolls.jpg"
+    img : "img/spicytuna-rolls.jpg"
 
 },
 {
@@ -141,30 +141,12 @@ let FOOD = [
 		img: "img/yaki-udon.jpg"
 	}
 ];
-
-
-let Cart =[{
-  name: "Yaki Udon",
-  price: 11.50,
-  img: "img/yaki-udon.jpg"
-},
-{ 
-    name: "Shiromi",
-    price: 9.50,
-    img: "img/shiromi.jpg"
-  },
-  {
-    name: "Tekka maki",
-    price: 6,
-    img:"img/tekka-maki.jpg"
-
-  }]
-
+/**********************************************************************Soli****************************************************/
 const initialState = {
     food: FOOD,
-    cart: Cart,
-    total: 0,
-    selectedFood: 0
+    cart:[{id:0,quantity:2}],
+    selectedFood: -1,
+    total:0
 };
 
 const store = createStore(initialState);
