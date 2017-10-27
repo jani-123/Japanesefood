@@ -25,6 +25,7 @@ const Cart=({cart})=>{
                 <div className="col-md-2 col-sm-2 col-xs-2 so-cart-total">
                         <h6 className="so-less-padding">Your Shopping cart</h6>
                         <h1 className="so-less-padding">${addPrices().toFixed(2)}</h1>
+                        
                         <button className="btn-link so-btn-empty" onClick={emptyCart}>EMPTY CART</button>
                         <NavLink to="/checkout" className="so-btn-checkout">CHECKOUT</NavLink>
                 </div>
