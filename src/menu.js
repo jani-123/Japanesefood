@@ -12,8 +12,8 @@ const Menu = ({food, selectedFood}) => {
                 <div className="col-md-1 col-xs-1 col-sm-1 k-back">
                     <a className='btn k-btn' onClick={() => nextFood(-1) }><img src="./img/nav-prev.png"/></a>
                 </div>
-                <div className="col-sm-3 col-md-3 col-xs-12"><img className="k-imgDetails" src={food[selectedFood].img}/></div>
-                <div className="col-sm-4 col-md-4 col-xs-12">
+                <div className="col-sm-2 col-md-2 col-xs-12 k-space"><img className="k-imgDetails" src={food[selectedFood].img}/></div>
+                <div className="col-sm-5 col-md-5 col-xs-12">
                     <Description foodDetail={food[selectedFood]}/>
                 </div>
                 <div className="col-sm-3 col-md-3 col-xs-12">
@@ -25,6 +25,15 @@ const Menu = ({food, selectedFood}) => {
                 </div>
             </div>
             <div className="row" id="details-bottom-image"></div>
+
+            <div className="k-buttonsBottom">
+                <div className="col-md-6 col-xs-6 col-sm-1 k-backd">
+                    <a className='btn' onClick={() => nextFood(-1) }><img src="./img/nav-prev.png"/></a>
+                </div>
+                <div className="col-md-1 col-xs-6 col-sm-1 k-nextd">
+                    <a className='btn' onClick={() => nextFood(1) }><img src="./img/nav-next.png"/></a>
+                </div>
+            </div>
         </div>
     )
 }
@@ -32,10 +41,15 @@ const Menu = ({food, selectedFood}) => {
 const Description =({foodDetail}) => {
     return (
         <div>
-            <h3>{foodDetail.name}</h3>
-            <label>{foodDetail.description}</label><br />
-            <div>{foodDetail.price}</div>
-            <button>Add to Cart</button>
+            <div className="k-detailDes">
+                <h3>{foodDetail.name}</h3>
+                <label>{foodDetail.description}</label>
+            </div>
+            <br />
+            <div className="k-priceButton">
+                <div className="col-xs-6 col-md-6 col-sm-6">${foodDetail.price}</div>
+                <button className="buy col-xs-6 col-md-6 col-sm-6">Add to Cart</button>
+            </div>
         </div>
     )
 }
