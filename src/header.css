@@ -1,6 +1,9 @@
 /*mar-header section*/
 
+#mar-header .btn-header {}
+
 #mar-header h1.logo {
+    padding-top: 10px;
     display: inline-block;
     width: 140px;
     height: 32px;
@@ -16,6 +19,8 @@
 #mar-header {
     padding-bottom: 40px;
     border-bottom: 1px solid #535353;
+    margin-left: 9%;
+    margin-right: 6%;
 }
 
 #mar-header #logo-pic {
