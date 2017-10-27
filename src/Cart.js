@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import { NavLink} from 'react-router-dom';
 import {getInfoProduct,addPrices,emptyCart} from './actions';
 const CartProduct=({product,index})=>{
     return (
@@ -24,7 +26,7 @@ const Cart=({cart})=>{
                         <h6 className="so-less-padding">Your Shopping cart</h6>
                         <h1 className="so-less-padding">${addPrices().toFixed(2)}</h1>
                         <button className="btn-link so-btn-empty" onClick={emptyCart}>EMPTY CART</button>
-                        <button className="so-btn-checkout">CHECKOUT</button>
+                        <NavLink to="/checkout" className="so-btn-checkout">CHECKOUT</NavLink>
                 </div>
             </div>
         </div>

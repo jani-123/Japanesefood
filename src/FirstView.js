@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import {addCart} from './actions'
+import {addCart,changeSelectedFood} from './actions'
+
+import { NavLink} from 'react-router-dom';
 
 const Product = ({item,index}) => {
     return(
@@ -9,7 +11,7 @@ const Product = ({item,index}) => {
                     <img src={item.img}/>
                     <div className="ha-arrow"><img src="arrow-right.png"/></div>
                 </div>
-                <strong>{item.name}</strong>
+                <NavLink to="/viewproduct" onClick={()=>changeSelectedFood(index)}><strong>{item.name}</strong></NavLink>
                 <span className='ha-price'><span>$</span><span >{item.price}</span></span>
                 <button className='ha-btn'onClick={ () => addCart(index)}>+ Add to cart</button>
                 

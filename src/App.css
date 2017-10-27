@@ -1,9 +1,4 @@
 /**************************************************Inicio Haidy*********************************************************/
-body {
-  font: 75% 'Droid Sans', sans-serif;
-  height: 100%;
-  background: #0c0c0c;
-}
 .ha-ubication{
   position: relative;
   margin-top: 4%;
@@ -146,4 +141,58 @@ border-right:0;
   height:100%;
   background: rgba(0,0,0,0.6);
 }
+
 /************************SOLI-fin****************************/
+/*********************CSS de Kely*******************/
+body {
+  height: 100%;
+  background: #0c0c0c url('http://demos.telerik.com/kendo-ui/content/spa/websushi/css/images/background-image.png') repeat left top;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.table>tbody>tr>td, .table>thead>tr>th {
+    padding: 0px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 0px solid #ddd !important; 
+    padding-bottom: 4px;
+}
+
+body .k-whiteFont{
+  background: white;
+}
+
+.k-btn{
+  padding: 0px !important; 
+  margin: 78px 18px;
+}
+.table>thead>tr>th {
+  border-bottom: 0px solid #ddd; 
+  text-align: center;
+}
+
+.k-imgDetails{
+  margin:  0 auto;
+}
+
+.k-back, .k-next{
+  background: black;
+  height: 200px;
+}
+
+#details-top-image {
+  background: url("http://www.apartmentsrambla102.com/blog/wp-content/uploads/2015/07/sushi.jpg") no-repeat top left;
+  height: 200px;
+}
+
+#details-bottom-image {
+  background: url("http://www.apartmentsrambla102.com/blog/wp-content/uploads/2015/07/sushi.jpg") no-repeat bottom left;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+/***********Fin Kely*********/
