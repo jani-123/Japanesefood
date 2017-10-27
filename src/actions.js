@@ -63,6 +63,15 @@ export const calculatePrice = (quantity,price) =>{
    })
 }
 
+export const sumPrice = () =>{
+    let c = 0;
+    for(var i of store.getState().cart){
+        let prod = store.getState().food[i.id];
+        c +=(prod.price * i.quantity);
+    }
+    return c;
+}
+
 /****************************/
 export const changeSelectedFood=(index)=>{
     console.log("sad",index)

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import { connect } from "redux-zero/react";
-import { calculatePrice } from "./actions";
+import { calculatePrice ,sumPrice} from "./actions";
 import './checkout.css';
 
-const CHECHOUT = ({ cart, total }) => {
+const CHECHOUT = ({food,cart}) => {
+  console.log("che",cart);
   const priceTotal = e => {
     let quantity = this.inputPrice.value;
     let price = e.target.id;
@@ -14,12 +15,12 @@ const CHECHOUT = ({ cart, total }) => {
       return (
         <tr key={index}>
           <td>
-            <div><img src={item.img} className="js-imagen" />
-              <span className="product-name">{item.name}</span>
+            <div><img src={food[item.id].img} className="js-imagen" />
+              <span className="product-name">{food[item.id].name}</span>
             </div>
           </td>
           <td><input type="number" ref={e => (this.inputPrice = e)} /></td>
-          <td><p className="table-price">{item.price}</p></td>
+          <td><p className="table-price">{food[item.id].price}</p></td>
         </tr>
       )
   });
@@ -42,11 +43,9 @@ const CHECHOUT = ({ cart, total }) => {
             {foodTable}
           </tbody>
         </table>
-        
           <p id="total-checkout" className="text-rigth">
-          <button className="btn btn-link" onClick={priceTotal} id={cart[0].price}>Total:</button>
-          <span className="">{total}</span></p>
-        
+          <button className="btn btn-link" onClick={priceTotal}>Total:</button>
+          <span className="">${sumPrice().toFixed(2)}</span></p>
         <a className="cancel-order" href="#">cancel order</a>
         <button className="order-now" href="#">order now!</button>
       
@@ -57,5 +56,5 @@ const CHECHOUT = ({ cart, total }) => {
   )
 }
 
-const mapToProps = ({ cart, total }) => ({ cart, total });
+const mapToProps = ({food,cart}) => ({food,cart});
 export default connect(mapToProps)(CHECHOUT)
