@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Cart from "./Cart"
 import { connect } from "redux-zero/react";
-import {Header} from './header';
+import {Header,Footer} from './header';
 import {addCart} from './actions';
 import {nextFood} from './actionsMariley';
 const Menu = ({food, selectedFood, cart}) => {
@@ -50,6 +50,7 @@ const Menu = ({food, selectedFood, cart}) => {
             </div>
             <div className="row" id="details-bottom-image"></div>
         </div>
+        <Footer />
         </div>
     )
 }
@@ -72,10 +73,10 @@ const Description =({foodDetail, selectedFood}) => {
 const Nutrition = ({foodDetail}) => {
     return (
         <div className="row">
-            <table class="table table-responsive k-table">
+            <table className="table table-responsive k-table">
                 <thead>
                     <tr>
-                    <th colspan="2">Nutritional Information</th>
+                    <th colSpan="2">Nutritional Information</th>
                     </tr>
                 </thead>
                 <tbody>
