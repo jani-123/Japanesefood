@@ -12,3 +12,17 @@ export const Header = ({cart}) => {
             </div>
     )
 }
+export const Footer = () => {
+    return (
+        <div id="footer">
+                    <p>CoolCode<sup>®</sup></p>
+                   <p> [ Kely Añamuro ]
+                    [ Janet Quispe ]
+                    [ Haydi Dueñas ]
+                    [ Susy Talavera ]
+                    [ Solimar Huayhua ]
+                    [ Mariley Erika ]</p>
+                    <p>Copyright © 2017</p>
+        </div>
+    )
+}

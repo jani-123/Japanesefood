@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Menu} from './menu';
-import {Header} from './header';
+import {Header, Footer} from './header';
 import { connect } from "redux-zero/react";
 import { NavLink} from 'react-router-dom';
 import FirstView from "./FirstView"
@@ -19,6 +19,7 @@ const App = ({food , cart}) => {
          }
          
          <FirstView food={food}/>
+         <Footer />
       </div>
     );
 }

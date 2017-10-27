@@ -97,3 +97,32 @@
     right: 10px;
     top: 12px;
 }
+
+
+/*footer section*/
+
+#footer {
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #535353;
+    font-size: 12px;
+    padding-bottom: 60px;
+    color: #999;
+}
+
+#footer p {
+    margin: 10px 0;
+}
+
+#footer a {
+    color: #d60041;
+}
+
+
+/*clear floats*/
+
+#footer:after:after {
+    content: "";
+    clear: both;
+    display: block;
+}
