@@ -132,14 +132,20 @@ border-right:0;
   visibility:visible;
 }
 .so-delete{
+  color:white;
+  padding-top: 35%;
+  display:flex;
+  justify-content: center;
   position: absolute;
   visibility:hidden;
   top:0;
   left:0;
   z-index:3;
   width:97px;
-  height:100%;
+  height:98px;
   background: rgba(0,0,0,0.6);
+  cursor: pointer;
+  cursor:hand;
 }
 
 /************************SOLI-fin****************************/
