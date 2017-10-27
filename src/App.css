@@ -213,6 +213,10 @@ body {
     box-sizing: border-box;
 }
 
+.k-whiteFont {
+    width: 78%;
+}
+
 .k-whiteFont .table>tbody>tr>td,
 .table>thead>tr>th {
     padding: 0px;

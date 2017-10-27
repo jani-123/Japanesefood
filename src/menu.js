@@ -27,23 +27,26 @@ const Menu = ({food, selectedFood, cart}) => {
                                 <a className='btn k-btns' onClick={() => nextFood(-1) }><img src="./img/nav-prev.png"/></a>
                             </div>
                         </div>
-                        <div className="col-xs-8 k-cd">
+
+                        <div className="col-xs-10 col-sm-4 col-md-4 col-lg-4 k-cd">
                             <img className="k-imgDetails" src={food[selectedFood].img}/>
                         </div>
+                        {/* mediaQuery  */}
                         <div className="k-buttonsBottom col-md-1 col-xs-1 col-sm-1">
                             <div className=" k-nextd">
                                 <a className='btn k-btns' onClick={() => nextFood(1) }><img src="./img/nav-next.png"/></a>
                             </div>
                         </div>
+                        {/* mediaQuery  */}
                     </div>
-                    <div className="col-sm-5 col-md-5 col-xs-12">
+                    <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <Description foodDetail={food[selectedFood]}
                                 selectedFood={selectedFood}/>
                     </div>
-                    <div className="col-sm-3 col-md-3 col-xs-12">
+                    <div className="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                         <Nutrition foodDetail={food[selectedFood]}/>
                     </div>
-                    <div className="col-md-1 col-xs-1 col-sm-1 k-next">
+                    <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 k-next">
                         <a className='btn k-btn' onClick={() => nextFood(1) }><img src="./img/nav-next.png"/></a>
                     </div>
                 </div>
